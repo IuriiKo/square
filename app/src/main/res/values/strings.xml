@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Square</string>
+    <string name="action_settings">Settings</string>
+    <string name="snack_bar_something_happen">Something happen!!!</string>
+</resources>
