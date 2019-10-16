@@ -23,6 +23,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -64,7 +67,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    testCompile 'org.mockito:mockito-core:2.18.3'
-    androidTestCompile 'org.mockito:mockito-android:2.18.3'
+    testImplementation 'org.mockito:mockito-core:2.23.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.23.0'
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    testImplementation 'org.hamcrest:hamcrest:2.1'
+    testImplementation 'android.arch.core:core-testing:1.1.1'
 
 }
